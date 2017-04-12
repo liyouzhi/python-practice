@@ -17,33 +17,33 @@ print(jishu)
 print(oushu)
 
 
-pid = "a_1.jpeg"
-thumb_id = pid + ".thumb"
-
-# "a_1.jpeg.thumb"
-
-thumbdata = mysql_get(thumb_id)
-if thumbdata:
-	return thumbdata
-
-pdata = mysql_get(pid)
-thumbnail = resize(pdata, width, height)
-mysql_set(thumb_id, thumbnail)
-return thumbnail
-
-
-data_path = "/pic_data/"
-pid = data_path + file_name
-thumb_id = pid + ".thumb"
-t_data = fopen(thumb_id)
-if t_data:
-	return t_data
-p_data = fopen(pid)
-t_data = resize(p_data, width, height)
-
-f = fnew(thumb_id)
-f.write(t_data)
-return t_data
-
-
-PIL
+# pid = "a_1.jpeg"
+# thumb_id = pid + ".thumb"
+#
+# # "a_1.jpeg.thumb"
+#
+# thumbdata = mysql_get(thumb_id)
+# if thumbdata:
+# 	return thumbdata
+#
+# pdata = mysql_get(pid)
+# thumbnail = resize(pdata, width, height)
+# mysql_set(thumb_id, thumbnail)
+# return thumbnail
+#
+#
+# data_path = "/pic_data/"
+# pid = data_path + file_name
+# thumb_id = pid + ".thumb"
+# t_data = fopen(thumb_id)
+# if t_data:
+# 	return t_data
+# p_data = fopen(pid)
+# t_data = resize(p_data, width, height)
+#
+# f = fnew(thumb_id)
+# f.write(t_data)
+# return t_data
+#
+#
+# PIL
